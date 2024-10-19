@@ -1,1 +1,60 @@
 <p>rooms-form works!</p>
+
+<div class="container mt-5">
+    <h2 class="text-center">Crear o Editar Habitación</h2>
+    <form >
+      
+      <!-- Tipo de Habitación -->
+      <div class="form-outline mb-4">
+        <input type="text" id="roomType" formControlName="roomType" class="form-control" placeholder="Tipo de Habitación" />
+        <label class="form-label" for="roomType">Tipo de Habitación</label>
+        <div  class="text-danger">
+          El tipo de habitación es requerido
+        </div>
+      </div>
+  
+      <!-- Capacidad -->
+      <div class="form-outline mb-4">
+        <input type="number" id="capacity" formControlName="capacity" class="form-control" placeholder="Capacidad" />
+        <label class="form-label" for="capacity">Capacidad</label>
+        <div class="text-danger">
+          La capacidad es requerida y debe ser al menos 1
+        </div>
+      </div>
+  
+      <!-- Descripción -->
+      <div class="form-outline mb-4">
+        <textarea id="description" formControlName="description" class="form-control" rows="3" placeholder="Descripción"></textarea>
+        <label class="form-label" for="description">Descripción</label>
+        <div  class="text-danger">
+          La descripción es requerida
+        </div>
+      </div>
+  
+      <!-- Estado (Disponible o No Disponible) -->
+      <div class="form-check mb-4">
+        <input type="checkbox" id="status" formControlName="status" class="form-check-input" />
+        <label class="form-check-label" for="status">Estado (Disponible)</label>
+      </div>
+  
+      <!-- Precio -->
+      <div class="form-outline mb-4">
+        <input type="number" id="price" formControlName="price" class="form-control" placeholder="Precio" />
+        <label class="form-label" for="price">Precio</label>
+        <div  class="text-danger">
+          El precio es requerido y debe ser mayor a 0
+        </div>
+      </div>
+  
+      <!-- Imagen (Opcional) -->
+      <div class="form-outline mb-4">
+        <input type="file" id="foto"  />
+        <label class="form-label" for="foto">Foto</label>
+      </div>
+  
+      <!-- Botón de Enviar -->
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary btn-block mb-4" >Guardar</button>
+      </div>
+    </form>
+  </div>
