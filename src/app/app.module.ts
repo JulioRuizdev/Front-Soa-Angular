@@ -9,6 +9,7 @@ import { ClienteComponent } from './components/cliente/cliente.component';
 import { RegisterComponent } from './components/register/register.component';
 import { AuthComponent } from './components/auth/auth.component';
 import { LayoutModule } from './layout/layout.module';
+import { RoomsFormComponent } from './components/rooms/rooms-form.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { LayoutModule } from './layout/layout.module';
     EmpleadoComponent,
     ClienteComponent,
     RegisterComponent,
-    AuthComponent
+    AuthComponent,
+    RoomsFormComponent
   ],
   imports: [
     BrowserModule,
